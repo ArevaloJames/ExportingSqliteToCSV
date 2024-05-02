@@ -283,7 +283,7 @@ namespace ExportingSqliteToCsv.Controllers
 
 
 
-                            TempData["ExportSuccess"] = "CSV files has been Generated Successfully.";
+                            TempData["ExportSuccess"] = "Files has been generated successfully.";
 
                             int fuelsCount = resultDict.First().Value.Count; // Assuming each dictionary entry represents a row of data
                             int safeDropCount = resultDictSafedrop.First().Value.Count; // Assuming each dictionary entry represents a row of data

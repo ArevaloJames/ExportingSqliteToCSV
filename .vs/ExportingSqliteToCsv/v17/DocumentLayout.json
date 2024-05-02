@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\views\\home\\rowcountsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\rowcountsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\views\\home\\rowcountsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\rowcountsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 248,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,64 +74,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T01:49:00.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RowCountsView.cshtml",
               "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\RowCountsView.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\RowCountsView.cshtml",
               "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\RowCountsView.cshtml",
               "RelativeToolTip": "Views\\Home\\RowCountsView.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-29T03:35:44.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T06:56:45.228Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FirstPage.cshtml",
-              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\FirstPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\FirstPage.cshtml",
-              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\FirstPage.cshtml",
-              "RelativeToolTip": "Views\\Home\\FirstPage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T06:03:39.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABwBAAAAAAAAAAAkwDABAABmAAAA",
+              "ViewState": "AQIAABsBAAAAAAAAAAAAACgBAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T00:58:23.487Z"
+              "WhenOpened": "2024-04-26T00:58:23.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FirstPage.cshtml",
+              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\FirstPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\FirstPage.cshtml",
+              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\FirstPage.cshtml",
+              "RelativeToolTip": "Views\\Home\\FirstPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T06:03:39.573Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -32,15 +32,17 @@
     function showConfirmationModal() {
         // Check if there is an export error in TempData
         var exportError = '@(TempData["ExportError"])';
+        var exportErrorPrompt = '@(TempData["ExportErrorPrompt"])';
 
         if (exportError) {
             // Display error message if there is an export error
             Swal.fire({
                 icon: 'error',
-                title: 'Oops...',
-                text: exportError,
+                title: exportError,
+                text: exportErrorPrompt,
                 confirmButtonColor: '#3085d6',
-                confirmButtonText: 'OK'
+                confirmButtonText: 'OK',
+                allowOutsideClick: false // Disallow clicks outside the modal
             }).then(() => {
                 // Close the system when OK is clicked
                 window.close();
@@ -54,7 +56,8 @@
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Confirm'
+                confirmButtonText: 'Confirm',
+                allowOutsideClick: false // Disallow clicks outside the modal
             }).then((result) => {
                 if (result.isConfirmed) {
                     // Set the form action and submit

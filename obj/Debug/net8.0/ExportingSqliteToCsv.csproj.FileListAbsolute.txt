@@ -113,3 +113,4 @@ D:\Work\Work OJT\ExportingSqliteToCsv\obj\Debug\net8.0\refint\ExportingSqliteToC
 D:\Work\Work OJT\ExportingSqliteToCsv\obj\Debug\net8.0\ExportingSqliteToCsv.pdb
 D:\Work\Work OJT\ExportingSqliteToCsv\obj\Debug\net8.0\ExportingSqliteToCsv.genruntimeconfig.cache
 D:\Work\Work OJT\ExportingSqliteToCsv\obj\Debug\net8.0\ref\ExportingSqliteToCsv.dll
+D:\Work\Work OJT\ExportingSqliteToCsv\obj\Debug\net8.0\ExportingSqliteToCsv.sourcelink.json

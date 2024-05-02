@@ -113,7 +113,7 @@ namespace ExportingSqliteToCsv.Controllers
                 
                 if (!System.IO.File.Exists(sqliteFilePath))
                 {
-                    TempData["ExportError"] = "There is No Database";
+                    TempData["ExportError"] = "Database is not found.";
 
                 }
 
@@ -302,8 +302,8 @@ namespace ExportingSqliteToCsv.Controllers
                             _logger.LogError(ex, "Error occurred while uptading the CSV files.");
 
                             // Set error message if CSV export fails
-                            TempData["ExportError"] = "Make sure to close all files before confirming.";
-                            TempData["ExportErrorPrompt"] = "Make sure to close all files before confirming";
+                            TempData["ExportError"] = "A CSV file is open.";
+                            TempData["ExportErrorPrompt"] = "Please close all files before confirming.";
                             
                             
                             return RedirectToAction("Index");
@@ -323,7 +323,7 @@ namespace ExportingSqliteToCsv.Controllers
                 _logger.LogError(ex, "Error occurred while uptading the CSV files.");
 
                 // Set error message if CSV export fails
-                TempData["ExportErrorPrompt"] = "Please Contact MIS - Enterprise";
+                TempData["ExportErrorPrompt"] = "Please Contact MIS - Enterprise.";
 
 
                 return RedirectToAction("Index");

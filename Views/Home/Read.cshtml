@@ -1,0 +1,36 @@
+﻿@model Dictionary<string, List<object>>
+
+
+<div>
+    <p>Execution Time: @ViewBag.ExecutionTime ms</p>
+</div>
+
+<div class="table-responsive">
+    <table class="table" id="myTable" style="width:100%">
+        <thead>
+            <tr>
+                @foreach (var columnName in Model.Keys)
+                {
+                    <th>@columnName</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Values.First().Count; i++)
+            {
+                <tr>
+                    @foreach (var columnValues in Model.Values)
+                    {
+                        <td>@columnValues[i]</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <form asp-action="ExportToCSV" method="post">
+        <button type="submit" class="btn btn-primary">Export to CSV</button>
+    </form>
+</div>

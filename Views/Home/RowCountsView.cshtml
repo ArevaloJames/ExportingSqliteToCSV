@@ -1,0 +1,37 @@
+﻿@model RowCountsViewModel
+
+
+@if (TempData["ExportSuccess"] != null)
+{
+    <div class="text-center alert alert-success" role="alert">
+        @TempData["ExportSuccess"]
+    </div>
+}
+
+<head>
+    <div class="text-center">
+    <title>Row Counts</title>
+    </div>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Row Counts</h1>
+    </div>
+    
+    <div id="countsAlert" class="text-center alert alert-info" role="alert">
+        Fuels: @Model.FuelsRowCount rows<br>
+        Safe Drop: @Model.SafeDropRowCount rows<br>
+        Lubes: @Model.LubesRowCount rows
+    </div>
+</body>
+<div class="text-center">
+<button id="closeTabButton" class="text-center btn btn-danger">CLOSE</button>
+</div>
+@section Scripts {
+    <script>
+        document.getElementById('closeTabButton').addEventListener('click', function () {
+            // Close the current tab
+            window.close();
+        });
+    </script>
+}

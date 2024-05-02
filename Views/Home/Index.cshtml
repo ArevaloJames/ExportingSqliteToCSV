@@ -1,0 +1,49 @@
+﻿@model Dictionary<string, List<object>>
+
+@{
+    ViewData["Title"] = "DB ERROR";
+}
+
+<!-- Script to handle the confirmation modal and AJAX call -->
+<script>
+    // Define a function to display the confirmation modal
+    function showConfirmationModal() {
+        Swal.fire({
+            title: "Is the POS still open?",
+            text: "Please confirm that the POS is still open",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, the POS is still open"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If confirmed, submit the form
+                $('#generateForm').submit();
+            } else {
+                // If user cancels, close the system
+                window.close();
+            }
+        });
+    }
+
+    // Call the showConfirmationModal function when the DOM is ready
+    window.onload = function () {
+        showConfirmationModal();
+    }
+</script>
+
+@if (TempData["ExportError"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ExportError"]
+    </div>
+}
+@if (TempData["ExportErrorPrompt"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ExportErrorPrompt"]
+    </div>
+}
+
+

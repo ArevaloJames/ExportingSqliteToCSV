@@ -1,0 +1,114 @@
+﻿@model Dictionary<string, List<object>>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+@* @if (TempData["ExportSuccess"] == null && TempData["ExportError"] == null)
+{
+    <div class="text-center alert alert-danger" role="alert">
+
+        Please close POS before clicking "GENERATE" button.
+    </div>
+}
+
+
+@if (TempData["ExportError"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ExportError"]
+    </div>
+}
+@if (TempData["ExportErrorPrompt"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ExportErrorPrompt"]
+    </div>
+} *@
+
+
+
+    <script>
+    // Function to show SweetAlert2 confirmation modal
+    function showConfirmationModal() {
+        // Check if there is an export error in TempData
+        var exportError = '@(TempData["ExportError"])';
+
+        if (exportError) {
+            // Display error message if there is an export error
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: exportError,
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                // Close the system when OK is clicked
+                window.close();
+            });
+        } else {
+            // Display the SweetAlert2 confirmation modal
+            Swal.fire({
+                title: 'Is the POS closed?',
+                text: 'Make sure the POS is closed before confirming',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirm'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Set the form action and submit
+                    $('#generateForm').attr('action', '@Url.Action("ExportToCSV", "Home")');
+                    $('#generateForm').submit();
+
+                    setTimeout(() => {
+                        window.close();
+                    }, 2000);
+                } else {
+                    // Close the system if user cancels
+                    window.close();
+                }
+            });
+        }
+    }
+
+    // Call the function to show modal when window loads
+    window.onload = function () {
+        showConfirmationModal();
+    };
+
+
+    </script>
+
+    <form id="generateForm" method="post" target="_blank">
+        <input type="hidden" name="buttonType" value="1">
+    </form>
+
+  @*   <form id="generateForm" method="post" target="_blank">
+        <input type="hidden" name="buttonType" value="1">
+        <button id="generateCsvButton" type="submit" class="btn btn-primary">GENERATE</button>
+    </form> *@
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var generateForm = document.getElementById('generateForm');
+        var alertDiv = document.getElementById('alert');
+
+        generateForm.addEventListener('submit', function (event) {
+            if (alertDiv && alertDiv.style.display !== 'none') {
+                event.preventDefault(); // Prevent form submission if there's an alert
+            } else {
+                var error = '@TempData["ExportError"]';
+                if (error !== '') {
+                    generateForm.action = ''; // Clear action attribute to prevent new tab opening
+                } else {
+                    generateForm.action = '@Url.Action("ExportToCSV", "Home")'; // Set action attribute for normal form submission
+                }
+            }
+            setTimeout(function () {
+                window.close();
+            }, 2000);
+        });
+    });
+</script>

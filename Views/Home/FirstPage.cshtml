@@ -41,7 +41,7 @@
                 title: exportError,
                 text: exportErrorPrompt,
                 confirmButtonColor: '#3085d6',
-                confirmButtonText: 'OK',
+                confirmButtonText: 'Close',
                 allowOutsideClick: false // Disallow clicks outside the modal
             }).then(() => {
                 // Close the system when OK is clicked
@@ -51,12 +51,12 @@
             // Display the SweetAlert2 confirmation modal
             Swal.fire({
                 title: 'Is the POS closed?',
-                text: 'Make sure the POS is closed before confirming',
-                icon: 'warning',
+                icon: 'question',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Confirm',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No',
                 allowOutsideClick: false // Disallow clicks outside the modal
             }).then((result) => {
                 if (result.isConfirmed) {

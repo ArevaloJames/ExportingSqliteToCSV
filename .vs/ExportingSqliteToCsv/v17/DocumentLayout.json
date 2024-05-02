@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:exportingsqlitetocsv.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -83,7 +83,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ExportingSqliteToCsv",
+              "Title": "ExportingSqliteToCsv.csproj",
               "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\ExportingSqliteToCsv.csproj",
               "RelativeDocumentMoniker": "ExportingSqliteToCsv.csproj",
               "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\ExportingSqliteToCsv.csproj",
@@ -103,8 +103,7 @@
               "RelativeToolTip": "wwwroot\\js\\site.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-02T02:36:28.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T02:36:28.465Z"
             },
             {
               "$type": "Document",
@@ -116,8 +115,7 @@
               "RelativeToolTip": "Views\\Home\\RowCountsView.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T03:35:44.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T03:35:44.369Z"
             },
             {
               "$type": "Document",
@@ -129,8 +127,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAANkAAAAAAAAAAAAAAB0BAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T00:58:23.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-26T00:58:23.487Z"
             },
             {
               "$type": "Document",
@@ -142,8 +139,7 @@
               "RelativeToolTip": "Views\\Home\\FirstPage.cshtml",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T06:03:39.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T06:03:39.573Z"
             }
           ]
         },

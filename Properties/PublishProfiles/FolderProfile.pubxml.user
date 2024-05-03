@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\Work\www\journal2csv</_PublishTargetUrl>
-    <History>True|2024-05-03T07:33:34.7407674Z;True|2024-05-03T15:05:18.9929725+08:00;True|2024-05-03T14:43:50.7911231+08:00;True|2024-05-03T11:33:27.8967806+08:00;True|2024-05-03T11:07:33.7213919+08:00;True|2024-05-03T11:07:17.5345099+08:00;</History>
+    <History>True|2024-05-03T08:11:15.4592652Z;True|2024-05-03T15:33:34.7407674+08:00;True|2024-05-03T15:05:18.9929725+08:00;True|2024-05-03T14:43:50.7911231+08:00;True|2024-05-03T11:33:27.8967806+08:00;True|2024-05-03T11:07:33.7213919+08:00;True|2024-05-03T11:07:17.5345099+08:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

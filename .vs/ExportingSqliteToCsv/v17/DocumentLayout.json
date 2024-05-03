@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -99,8 +99,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-03T06:39:00.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T06:39:00.214Z"
             },
             {
               "$type": "Document",
@@ -112,8 +111,7 @@
               "RelativeToolTip": "Views\\Home\\RowCountsView.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T03:35:44.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T03:35:44.369Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "Views\\Home\\FirstPage.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T06:03:39.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T06:03:39.573Z"
             }
           ]
         },

@@ -17,7 +17,7 @@ namespace ExportingSqliteToCsv.Controllers
 
        
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             string sqliteFilePath = Path.Combine("D:\\RealSoft\\RealPOS\\realhq\\", "journal.sqlite");
 
@@ -26,11 +26,12 @@ namespace ExportingSqliteToCsv.Controllers
                 TempData["ExportError"] = "Database is not found.";
                 TempData["ExportErrorPrompt"] = "Please contact MIS - Enterprise.";
 
+                await Task.Delay(5000);
 
                 return RedirectToAction("FirstPage");
             }
 
-
+            await Task.Delay(5000);
             return RedirectToAction("FirstPage");
         }
 
@@ -355,112 +356,41 @@ namespace ExportingSqliteToCsv.Controllers
 
                         try
                         {
+                            string folderPath = "D:\\Flowmeter\\CSV";
+
                             // Export Fuel Data to CSV
-                            string fuelFolderPath = "D:\\RealSoft\\RealPOS\\realhq";
-                            string fuelFileName = "1143-Fuels-" + DateTime.Now.Year + ".csv";
-                            string fuelCsvFilePath = Path.Combine(fuelFolderPath, fuelFileName);
-
-                            if (!Directory.Exists(fuelFolderPath))
-                            {
-                                Directory.CreateDirectory(fuelFolderPath);
-                            }
-
-                            using (StreamWriter sw = new StreamWriter(fuelCsvFilePath, false, Encoding.UTF8))
-                            {
-                                sw.WriteLine(string.Join(",", resultDict.Keys));
-
-                                for (int i = 0; i < resultDict.Values.First().Count; i++)
-                                {
-                                    List<string> rowData = new List<string>();
-                                    foreach (var key in resultDict.Keys)
-                                    {
-                                        rowData.Add(resultDict[key][i].ToString());
-                                    }
-                                    sw.WriteLine(string.Join(",", rowData));
-                                }
-                            }
+                            ExportToCsv(resultDict, folderPath, "Fuels");
 
                             // Export Safe Drop Data to CSV
-                            string safeDropFolderPath = "D:\\RealSoft\\RealPOS\\realhq";
-                            string safeDropFileName = "1143-Safedrop-" + DateTime.Now.Year + ".csv";
-                            string safeDropCsvFilePath = Path.Combine(safeDropFolderPath, safeDropFileName);
+                            ExportToCsv(resultDictSafedrop, folderPath, "Safedrop");
 
-                            if (!Directory.Exists(safeDropFolderPath))
-                            {
-                                Directory.CreateDirectory(safeDropFolderPath);
-                            }
-
-                            using (StreamWriter sw = new StreamWriter(safeDropCsvFilePath, false, Encoding.UTF8))
-                            {
-                                sw.WriteLine(string.Join(",", resultDictSafedrop.Keys));
-
-                                for (int i = 0; i < resultDictSafedrop.Values.First().Count; i++)
-                                {
-                                    List<string> rowData = new List<string>();
-                                    foreach (var key in resultDictSafedrop.Keys)
-                                    {
-                                        rowData.Add(resultDictSafedrop[key][i].ToString());
-                                    }
-                                    sw.WriteLine(string.Join(",", rowData));
-                                }
-                            }
                             // Export Lubes Data to CSV
-                            string lubesFolderPath = "D:\\RealSoft\\RealPOS\\realhq";
-                            string lubesFileName = "1143-Lubes-" + DateTime.Now.Year + ".csv";
-                            string lubesCsvFilePath = Path.Combine(lubesFolderPath, lubesFileName);
+                            ExportToCsv(resultDictLubes, folderPath, "Lubes");
 
-                            if (!Directory.Exists(lubesFolderPath))
-                            {
-                                Directory.CreateDirectory(lubesFolderPath);
-                            }
-
-                            using (StreamWriter sw = new StreamWriter(lubesCsvFilePath, false, Encoding.UTF8))
-                            {
-                                sw.WriteLine(string.Join(",", resultDictLubes.Keys));
-
-                                for (int i = 0; i < resultDictLubes.Values.First().Count; i++)
-                                {
-                                    List<string> rowData = new List<string>();
-                                    foreach (var key in resultDictLubes.Keys)
-                                    {
-                                        rowData.Add(resultDictLubes[key][i].ToString());
-                                    }
-                                    sw.WriteLine(string.Join(",", rowData));
-                                }
-                            }
-
-
-
-                            TempData["ExportSuccess"] = "Files has been generated successfully.";
-
-                            int fuelsCount = resultDict.First().Value.Count; // Assuming each dictionary entry represents a row of data
-                            int safeDropCount = resultDictSafedrop.First().Value.Count; // Assuming each dictionary entry represents a row of data
-                            int lubesCount = resultDictLubes.First().Value.Count; // Assuming each dictionary entry represents a row of data
+                            TempData["ExportSuccess"] = "Files have been generated successfully.";
 
                             // Store the counts in TempData
-                            TempData["FuelsRowCount"] = fuelsCount;
-                            TempData["SafeDropRowCount"] = safeDropCount;
-                            TempData["LubesRowCount"] = lubesCount;
+                            TempData["FuelsRowCount"] = resultDict.First().Value.Count;
+                            TempData["SafeDropRowCount"] = resultDictSafedrop.First().Value.Count;
+                            TempData["LubesRowCount"] = resultDictLubes.First().Value.Count;
 
                             return RedirectToAction("RowCountsView");
-
                         }
                         catch (Exception ex)
                         {
-                            _logger.LogError(ex, "Error occurred while uptading the CSV files.");
+                            _logger.LogError(ex, "Error occurred while updating the CSV files.");
 
                             // Set error message if CSV export fails
                             TempData["ExportError"] = "A CSV file is open.";
                             TempData["ExportErrorPrompt"] = "Please close all files before confirming.";
-                            
-                            
-                            return RedirectToAction("Index");
 
+                            return RedirectToAction("Index");
                         }
 
 
+
                     }
-                    
+
                 }
 
 
@@ -482,7 +412,44 @@ namespace ExportingSqliteToCsv.Controllers
 
 
         }
-        public IActionResult RowCountsView()
+
+        void ExportToCsv(Dictionary<string, List<object>> dataDict, string folderPath, string fileType)
+        {
+            string sqliteFilePath = Path.Combine("D:\\RealSoft\\RealPOS\\realhq\\", "journal.sqlite");
+            object siteCode;
+            string siteCodeQuery = $"SELECT xSITECODE FROM xTickets LIMIT 1;";
+            using (var connection = new SqliteConnection($"Data Source={sqliteFilePath};"))
+            {
+                connection.Open();
+                using (var command = new SqliteCommand(siteCodeQuery, connection))
+                {
+                    siteCode = command.ExecuteScalar();
+                }
+            }
+            string fileName = $"{siteCode}-{fileType}-{DateTime.Now.Year}.csv";
+            string csvFilePath = Path.Combine(folderPath, fileName);
+
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            using (StreamWriter sw = new StreamWriter(csvFilePath, false, Encoding.UTF8))
+            {
+                sw.WriteLine(string.Join(",", dataDict.Keys));
+
+                for (int i = 0; i < dataDict.Values.First().Count; i++)
+                {
+                    List<string> rowData = new List<string>();
+                    foreach (var key in dataDict.Keys)
+                    {
+                        rowData.Add(dataDict[key][i].ToString());
+                    }
+                    sw.WriteLine(string.Join(",", rowData));
+                }
+            }
+        }
+            public IActionResult RowCountsView()
         {
             // Retrieve row counts from TempData
             int fuelsCount = (int)TempData["FuelsRowCount"];

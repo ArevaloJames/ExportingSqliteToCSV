@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExportingSqliteToCsv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9355e30fe3773894d870715eb0dd1878c9dbd58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebda1a4829c5e7fe7af6a2762f1401a1a2cd2e0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExportingSqliteToCsv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExportingSqliteToCsv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

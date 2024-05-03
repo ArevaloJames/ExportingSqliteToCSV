@@ -3,19 +3,15 @@
   "WorkspaceRootPath": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\home\\rowcountsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\rowcountsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|D:\\Work\\Work OJT\\ExportingSqliteToCsv\\views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|d:\\work\\work ojt\\exportingsqlitetocsv\\views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB0BB141-51B4-44A0-96FA-6062C8ECEF88}|ExportingSqliteToCsv.csproj|solutionrelative:views\\home\\firstpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 248,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,54 +74,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-02T02:36:28.465Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T06:39:00.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RowCountsView.cshtml",
               "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\RowCountsView.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\RowCountsView.cshtml",
               "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\RowCountsView.cshtml",
               "RelativeToolTip": "Views\\Home\\RowCountsView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-29T03:35:44.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Controllers\\HomeController.cs*",
-              "RelativeToolTip": "Controllers\\HomeController.cs*",
-              "ViewState": "AQIAANkAAAAAAAAAAAAAAOMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T00:58:23.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FirstPage.cshtml",
               "DocumentMoniker": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\FirstPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\FirstPage.cshtml",
               "ToolTip": "D:\\Work\\Work OJT\\ExportingSqliteToCsv\\Views\\Home\\FirstPage.cshtml",
               "RelativeToolTip": "Views\\Home\\FirstPage.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T06:03:39.573Z"
+              "WhenOpened": "2024-04-29T06:03:39.573Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -148,10 +132,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",

@@ -3,29 +3,6 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-@* @if (TempData["ExportSuccess"] == null && TempData["ExportError"] == null)
-{
-    <div class="text-center alert alert-danger" role="alert">
-
-        Please close POS before clicking "GENERATE" button.
-    </div>
-}
-
-
-@if (TempData["ExportError"] != null)
-{
-    <div class="alert alert-danger" role="alert">
-        @TempData["ExportError"]
-    </div>
-}
-@if (TempData["ExportErrorPrompt"] != null)
-{
-    <div class="alert alert-danger" role="alert">
-        @TempData["ExportErrorPrompt"]
-    </div>
-} *@
-
-
 
     <script>
     // Function to show SweetAlert2 confirmation modal
@@ -87,18 +64,19 @@
         <input type="hidden" name="buttonType" value="1">
     </form>
 
-  @*   <form id="generateForm" method="post" target="_blank">
-        <input type="hidden" name="buttonType" value="1">
-        <button id="generateCsvButton" type="submit" class="btn btn-primary">GENERATE</button>
-    </form> *@
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var generateForm = document.getElementById('generateForm');
         var alertDiv = document.getElementById('alert');
+        var formSubmitted = false;
 
         generateForm.addEventListener('submit', function (event) {
+            if (formSubmitted) {
+                event.preventDefault(); // Prevent form submission if already submitted
+                return;
+            }
             if (alertDiv && alertDiv.style.display !== 'none') {
                 event.preventDefault(); // Prevent form submission if there's an alert
             } else {
@@ -109,6 +87,7 @@
                     generateForm.action = '@Url.Action("ExportToCSV", "Home")'; // Set action attribute for normal form submission
                 }
             }
+            formSubmitted = true;
             setTimeout(function () {
                 window.close();
             }, 2000);
